@@ -26,13 +26,14 @@ body {
 .buttons {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .buttons button {
     border: none;
     max-width: 20vw;
     margin: 20px;
-    padding: 20px;
+    padding: 15px;
     background-color: #456783;
     color: white;
 }
@@ -41,4 +42,21 @@ body {
     transform:scale(1.1);
     box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
 }
-
+.box{
+    border-radius: 15px;
+    margin: 15px;
+}
+@media screen and (max-width: 640px) {
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buttons button {
+      max-width: 100%;
+    }
+    .titulo h1 {
+        font-size: 1.5em; /* Aumenta o tamanho do texto para telas maiores que 600px */
+    }
+  }
+ 
